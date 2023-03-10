@@ -387,6 +387,9 @@ public class ModuleAdapter extends AbstractContextual {
 	 * @throws OMEROException
 	 */
 	private OMEROSession session() throws OMEROException {
+		System.out.println("OMERO_service: "+omeroService);
+		System.out.println("OMERO_client: "+client);
+		System.out.println("OMERO_session: "+session);
 		if (session == null) {
 			synchronized (this) {
 				if (session == null) {
