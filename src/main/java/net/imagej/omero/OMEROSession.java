@@ -154,8 +154,6 @@ public class OMEROSession /*extends AbstractContextual*/ implements Closeable {
 	public OMEROSession(final OMEROService omeroService,
 		final omero.client client) throws OMEROException
 	{
-		System.out.println("OMERO_service: "+omeroService);
-		System.out.println("OMERO_client: "+client);
 		this(omeroService, new OMEROServer(OMERO.host(client), OMERO.port(client)),
 			null, client);
 	}
